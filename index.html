@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        FitnessFreak
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="./images/icon.png" type="image/icon type">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="./images/22.png" alt="logo">
+        </div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Franchise</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn open-button" onclick="openLoginForm()" style="background-color:#fe7f27;">Log In</button>
+            <button class="btn open-button" onclick="openForm()" style="background-color:#eb1c24">Register</button>
+        </div>
+    </nav>
+    <div class="sec1">
+        <div class="container">
+            <div class="sec1_div">
+                <div class="quote">
+                    <p><span style="display:block; font-size: 1rem; margin-top: 10px;"><span
+                                style="border-left: 4px solid #fe7f27;"></span>&nbspARE YOU READY
+                            TO</span>
+                        <span style="display:block; font-size: 3rem; margin: 15px;"><span style="color: #fe7f27">GET
+                                FIT</span>,
+                            STRONG</span>
+                        <span style="display:block; font-size: 3rem;margin: 15px; margin-bottom: 10px;">&
+                            MOTIVATED!</span>
+                    </p>
+                </div>
+                <button class="open-button" onclick="openForm()" id="register"><i>Register >></i></button>
+            </div>
+
+
+        </div>
+        <div class="form-popup" id="myForm">
+            <div class="logo">
+                <img src="./images/22.png" alt="logo">
+            </div>
+            <form class="form-container">
+                <h1>Register</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="cpsw"><b>Confirm password</b></label>
+                <input type="password" placeholder="Re-enter Password" name="cpsw" required>
+
+                <div id="error"></div>
+
+                <button type="submit" class="btn">Register</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+        <div class="form-popup" id="LoginForm">
+            <div class="logo">
+                <img src="./images/22.png" alt="logo">
+            </div>
+            <form class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <div id="error"></div>
+
+                <button type="submit" class="btn">Log In</button>
+                <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="sec2">
+        <div class="calc-container">
+            <h1 class="calculator-heading">BMI Calculator</h1>
+            <div class="calculator_wrapper">
+                <div class="height">
+                    <label data-domain="cm"> Height:
+                        <input class="input-box heightValue" placeholder=" in cms">
+                    </label>
+                </div>
+                <div class="weight">
+                    <label> Weight:
+                        <input class="input-box weightValue" placeholder="in kgs">
+                    </label>
+                </div>
+                <div class="bmi-result-box">
+                    <i class="bmi-result">&nbsp;</i>
+                </div>
+                <div>
+                    <button class="calculate-button">
+                        Calculate
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="sec3">
+        <div class="sec3_div">
+            <p id="nutrition">
+                GET FREE <br><span style="color:green; font-size:60px">NUTRITION</span><br>ADVICE FROM <BR>OUR EXPERTS!
+            </p>
+            <a href="https://wa.me/91"><button id="chat">Chat on WhatsApp</button></a>
+        </div>
+    </div>
+    <footer>
+        Proudly made with &#x2764; by :
+        <div class="tooltip">Tushar,<span class="tooltiptext">101903670</span></div>
+        <div class="tooltip">&nbsp;Rashita<span class="tooltiptext">101903710</span></div>&nbsp;and&nbsp;
+        <div class="tooltip">Chitresh Malhan.<span class="tooltiptext">101903662</span></div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
